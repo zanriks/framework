@@ -1,5 +1,5 @@
 <?php
-namespace Src\Auth;
+namespace Framework\Auth;
 
 interface IdentityInterface
 {

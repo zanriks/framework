@@ -1,6 +1,6 @@
 <?php
 
-namespace Src;
+namespace Framework;
 
 use Exception;
 
@@ -38,7 +38,7 @@ class View
     private function getPathToView(string $view = ''): string
     {
         $view = str_replace('.', '/', $view);
-        return $this->getRoot() . "/$view.php";
+        return $this->getRoot() . "/View.php";
     }
 
     public function render(string $view = '', array $data = []): string

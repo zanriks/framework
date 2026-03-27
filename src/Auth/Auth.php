@@ -1,7 +1,7 @@
 <?php
 
-namespace Src\Auth;
-use Src\Session;
+namespace Framework\Auth;
+use Framework\Session;
 
 class Auth
 {
