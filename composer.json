@@ -1,0 +1,22 @@
+{
+    "name": "zanriks/framework",
+    "description": "library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arseniy",
+            "email": "arseniysharnin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "core/Src"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "nikic/fast-route": "^2.0@dev"
+    }
+}
