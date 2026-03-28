@@ -38,7 +38,7 @@ class View
     private function getPathToView(string $view = ''): string
     {
         $view = str_replace('.', '/', $view);
-        return $this->getRoot() . "/View.php";
+        return $this->getRoot() . "/" . $view . ".php";
     }
 
     public function render(string $view = '', array $data = []): string
@@ -50,6 +50,7 @@ class View
             ob_start();
             require $path;
             $content = ob_get_clean();
+
             return require($this->getPathToMain());
         }
         throw new Exception('Error render');
