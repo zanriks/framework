@@ -25,7 +25,10 @@ class Settings
     {
         return '/' . $this->path['routes'] ?? '';
     }
-
+    public function getRootPath(): string
+    {
+        return $this->_settings['path']['root'] ?? '';
+    }
     public function getAuthClassName(): string
     {
         return $this->app['auth'] ?? '';
